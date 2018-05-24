@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # vplan
 
 > A Vue.js project
@@ -20,6 +19,3 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-=======
-# fims_web
->>>>>>> 3b51f994e14921a5c4b7dfd8021f4d8bf0fe9b65
