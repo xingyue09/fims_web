@@ -1,12 +1,12 @@
 <template >
 	<div>
-		<Row type="flex" align="top" class="margin-bottom-20" :gutter="16">
+		<Row type="flex" align="top" class="margin-bottom-20" :gutter="15">
       <Col span="2">
         <Select :clearable="true" placeholder="年份">
             <Option v-for="item in yearList" :value="item.id" :key="item.id">{{item.text}}</Option>
         </Select>
       </Col>
-			<Col span="3">
+			<Col span="2">
 				<DatePicker v-model="formData.startdate" format="yyyy-MM-dd" placeholder="记录日期" @on-change="formData.startdate = $event">
 				</DatePicker>
 			</Col>
@@ -15,10 +15,10 @@
               <Option v-for="item in planUserList" :value="item.id" :key="item.id">{{ item.username }}</Option>
           </Select>
       </Col> -->
-      <Col span="2">
+      <Col>
         <Button type="primary" @click="search" :loading="loading">搜索</Button>
       </Col>
-      <Col span="2">
+      <Col>
         <Button type="primary" @click="addPlan">写周报</Button>
       </Col>
 		</Row>

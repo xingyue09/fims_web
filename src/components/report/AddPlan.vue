@@ -103,8 +103,7 @@
 	        });
 	      },
 	      getWeekList(vm){
-	        vm.weekList = [];
-	        if(vm.finishedWeekList.length > 0){
+	          vm.weekList = [];
 	          var year = vm.iyear;
 	          if(year){//year清空后
 	          	  var curWeek = 1, lastWeek = 1;
@@ -133,8 +132,7 @@
 		          vm.getWeekStartAndEnd(vm);
 	          }else{
 	          	vm.weeksort = "";
-	          }          
-	        }    
+	          }
 	      },
 	      getWeekStartAndEnd(vm){
 	        if(typeof vm == 'number' || vm == ""){
